@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tavakoli bmi</title>
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="bmiForm">
+        <div class="bmi-calculator">
+          <h1 style="margin-bottom: 1em;">Calculate your BMI</h1>
+          <div class="bmi-calculator-weight">
+            <input class="weight-slider" name="realweight" id="myWeight" type="range" min="25" max="180" value="60"/>
+            <p style="margin-top: 1.8em;">
+              WEIGHT: 
+              <input name="Teža" id="inputWeight" type="number" value="60" min="25" max="180" step="1"/>
+              <span id="weight"></span> kg
+            </p>
+          </div>
+          <div class="bmi-calculator-height">
+            <input class="height-slider" name="realheight" id="myHeight" type="range" min="100" max="220" step="1" value="160">
+            <p style="margin-top: 1.8em;">
+              HEIGHT:
+              <input name="Višina" id="inputHeight" type="number" value="160" min="100" max="220" step="1"/>
+              <span id="height"></span> cm
+            </p>
+          </div>
+          <input class="gumb" type="button" value="Calculate" style="margin-top: 0.5em">
+         <p style="margin-top: 1em;font-size: 1.2em;">
+           <strong>Your BMI:</strong>
+           <span id="yourbmi" style="font-size: 1.2em;margin-left: 8px;"></span>
+         </p>
+         <p></p>
+         <p>
+           <span id="evaluationMessage"></span>
+         </p>
+        </div>
+        </form>
+    <script src="main.js"></script>
+</body>
+</html>
